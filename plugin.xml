@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-overlay" version="1.0.0">
+
+    <name>Cordova Overlay Plugin</name>
+    <license>MIT</license>
+    <author>Michael Jedich</author>
+
+    <description>TODO</description>
+    <keywords>TODO</keywords>
+    <repo>https://github.com/kolbasa/cordova-plugin-overlay</repo>
+    <issue>https://github.com/kolbasa/cordova-plugin-overlay/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=9.0.0"/>
+        <engine name="cordova-android" version=">=9.0.0"/>
+    </engines>
+
+    <js-module src="www/Overlay.js" name="Overlay">
+        <clobbers target="window.Overlay"/>
+    </js-module>
+    <js-module src="www/API.js" name="API"/>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Overlay">
+                <param name="android-package" value="de.kolbasa.overlay.Overlay"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+        </config-file>
+
+        <source-file src="src/android/Overlay.java" target-dir="src/de/kolbasa/overlay"/>
+
+    </platform>
+
+</plugin>
