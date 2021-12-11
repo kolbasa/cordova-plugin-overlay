@@ -15,7 +15,9 @@
     "prepublish": "npm run build"
   },
   "keywords": [
-    "TODO"
+    "android",
+    "overlay",
+    "permission"
   ],
   "author": "Michael Jedich",
   "license": "MIT",

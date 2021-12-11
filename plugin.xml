@@ -7,8 +7,8 @@
     <license>MIT</license>
     <author>Michael Jedich</author>
 
-    <description>TODO</description>
-    <keywords>TODO</keywords>
+    <description>This plugin is intended for requesting the screen overlay permission on Android.</description>
+    <keywords>android,overlay,permission</keywords>
     <repo>https://github.com/kolbasa/cordova-plugin-overlay</repo>
     <issue>https://github.com/kolbasa/cordova-plugin-overlay/issues</issue>
 
