@@ -4,13 +4,13 @@ var plugin = function () {
 var Overlay = /** @class */ (function () {
     function Overlay() {
     }
-    Overlay.canRequestPackageInstalls = function () {
+    Overlay.canOverlayScreen = function () {
         var overlay = plugin();
-        return overlay.canRequestPackageInstalls.apply(overlay, arguments);
+        return overlay.canOverlayScreen.apply(overlay, arguments);
     };
-    Overlay.openInstallSetting = function () {
+    Overlay.openOverlaySetting = function () {
         var overlay = plugin();
-        return overlay.openInstallSetting.apply(overlay, arguments);
+        return overlay.openOverlaySetting.apply(overlay, arguments);
     };
     return Overlay;
 }());

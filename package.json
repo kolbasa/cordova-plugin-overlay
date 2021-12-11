@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-overlay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin is intended for requesting the screen overlay permission on Android.",
   "cordova": {
     "id": "cordova-plugin-overlay",
