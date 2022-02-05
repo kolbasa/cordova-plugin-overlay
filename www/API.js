@@ -16,7 +16,7 @@ module.exports = {
     },
 
     /**
-     * @returns {Promise<void>}
+     * @returns {Promise<boolean>}
      */
     openOverlaySetting: function () {
         return new Promise(function (resolve, reject) {
